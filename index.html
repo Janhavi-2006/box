@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box" onclick="toggleBox(this)">
+        Click Me
+        <div class="options">
+            <button onclick="changeColor(event, this, 'red')">Red</button>
+            <button onclick="changeColor(event, this, 'blue')">Blue</button>
+            <button onclick="changeSize(event, this, '200px', '400px')">Increase Size</button>
+            <button onclick="resetBox(event, this)">Reset</button>
+        </div>
+    </div>
+    <div class="box" onclick="toggleBox(this)">
+        Click Me
+        <div class="options">
+            <button onclick="changeColor(event, this, 'green')">Green</button>
+            <button onclick="changeColor(event, this, 'yellow')">Yellow</button>
+            <button onclick="changeSize(event, this, '200px', '400px')">Increase Size</button>
+            <button onclick="resetBox(event, this)">Reset</button>
+        </div>
+    </div>
+    <div class="box" onclick="toggleBox(this)">
+        Click Me
+        <div class="options">
+            <button onclick="changeColor(event, this, 'purple')">Purple</button>
+            <button onclick="changeColor(event, this, 'orange')">Orange</button>
+            <button onclick="changeSize(event, this, '200px', '400px')">Increase Size</button>
+            <button onclick="resetBox(event, this)">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
